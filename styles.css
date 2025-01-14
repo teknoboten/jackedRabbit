@@ -38,9 +38,9 @@ img {
  .program {
     padding: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd; /* Light border to separate sections */
-    border-radius: 8px;
-    background-color: #fafafa; 
+    /* border: 1px solid #ddd;  */
+    /* border-radius: 8px; */
+    /* background-color: #fafafa;  */
 }
 
 .program h2 {
