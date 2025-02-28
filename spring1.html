@@ -1,0 +1,218 @@
+<style>
+  /* Container Styles */
+  main {
+    max-width: 1000px;
+    margin: 0rem auto;
+    padding: .25rem;
+    background: white;
+    border-radius: 8px;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 12px;
+  }
+
+  /* Global Heading Styles */
+  h1 {
+    font-family: "Tiller Bold", "Cambria", "Cochin", Georgia, Times,
+      "Times New Roman", serif;
+    margin: 0 0 15px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: "Tiller Bold", "Cambria", "Cochin", Georgia, Times,
+      "Times New Roman", serif;
+    margin: 12px 0;
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 300;
+  }
+
+  /* Card Style */
+  .card {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    max-width: 100%;
+  }
+
+  /* Register Button */
+  .register-btn {
+    background-color: #025959;
+    color: white;
+    font-size: 1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+  }
+
+  .register-btn:hover {
+    background-color: #023f3f;
+    transform: scale(1.05);
+  }
+
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: 200;
+    padding: 10px;
+    text-align: left;
+    /* border: 1px solid #ddd; */
+    color: #333;
+  }
+
+
+  .responsive-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  .responsive-table td {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .responsive-table td a {
+    color: #025959;
+    text-decoration: none;
+  }
+
+  .responsive-table td a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+
+    .program h2 {
+      font-size: 1.5rem;
+    }
+
+    .program h4 {
+      font-size: 1.1rem;
+    }
+
+    .program p {
+      font-size: 0.95rem;
+    }
+
+    .responsive-table th,
+    .responsive-table td {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<main>
+
+    <div class="container">
+        <table class="responsive-table"></table>
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto"
+        rel="stylesheet"
+        />
+</main>
+  <script>
+    // Assuming the HTML response is already available as a string
+
+    const response = `document.write('<div>' + '<style> div.jr-container { box-sizing:border-box } div.jr-container:before,div.jr-container:after { box-sizing: border-box } .responsive-table { font-family: inherit; color: black; } /* container styles */ .jr-container { margin: 5% 3%; } .responsive-table { font-size: .9em; border-spacing: 0; border-collapse: collapse; } .responsive-table { width: 100%; margin-bottom: 1.5em; } .responsive-table thead { /*// Accessibly hide <thead> on narrow viewports*/ position: absolute; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden; } .responsive-table thead th { /*background-color: rgba(29,150,178,1); border: 1px solid rgba(29,150,178,1);*/ /*font-weight: normal;*/ text-align: center; } .responsive-table thead :first-child { text-align: left; } /*// Set these items to display: block for narrow viewports*/ .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td { display: block; padding: 0; text-align: left; white-space: normal; } .responsive-table thead tr th, .responsive-table tbody tr td, .responsive-table tbody tr th { padding: .3em .5em; vertical-align: middle; } .responsive-table tbody tr { margin-bottom: 1em; border: 2px solid rgba(94,93,82,1) } .responsive-table tbody tr:last-of-type { margin-bottom: 0; } .responsive-table tbody th[scope="row"],.responsive-table thead th[scope="col"].jr-header { text-align: left; } .responsive-table tbody td { text-align: right; } .responsive-table tbody td[data-type=currency] { text-align: right; } .responsive-table tbody td[data-title]:before { content: attr(data-title); float: left; font-size: .8em; color: rgba(94, 93, 82, .75); } .responsive-table tbody td[data-title="Openings"], .responsive-table tbody td[data-title="Price"] { white-space: nowrap; } /* override register link styles */ .responsive-table tbody td.jr-reg-col { } .responsive-table tbody td.jr-reg-col:before { content: \'\'; } .responsive-table tbody td[data-title]:before { font-size: .9em; } /* add header style for mobile as well */ @media (max-width: 474px) { .responsive-table tbody th { } } /* large table styles */ @media (min-width: 475px) { .jr-container { margin: 2em auto; } .responsive-table tbody tr:nth-of-type(even) { background-color: rgba(94, 93, 82, 0.1); } .responsive-table tbody tr td[data-title="Description"], .responsive-table thead tr th[data-title="Description"] { text-align: left; } .responsive-table { font-size: 9pt; } .responsive-table thead { /*// Unhide <thead> on wide viewports*/ position: relative; clip: auto; height: auto; width: auto; overflow: auto; } .responsive-table tbody :first-child { text-align: left; } .responsive-table tr { /*// Undo display: block*/ display: table-row; } .responsive-table th, .responsive-table td { /*// Undo display: block*/ display: table-cell; } .responsive-table tbody { /*// Undo display: block*/ display: table-row-group; } .responsive-table tbody tr { border: none; } .responsive-table tbody tr { /*// Undo display: block*/ display: table-row; border-width: 1px; } .responsive-table tbody th[scope="row"] { background-color: transparent; color: rgba(94,93,82,1); font-weight: normal; } .responsive-table tbody td { text-align: center; } .responsive-table tbody td[data-title="Program"], .responsive-table thead th[data-title="Program"] { text-align: left; } .responsive-table tbody td[data-title]:before { /*// Don’t show data-title labels*/ content: none; } } /* large table styles passed in from user! */ .responsive-table tbody td[data-title="Program"], .responsive-table tbody th[data-title="Program"] { } .responsive-table { } .responsive-table thead tr th { } </style>' + ' <div class="jr-container"> <table class="responsive-table"> <thead> <tr> <th scope="col" data-title="Register"> Register </th> <th scope="col" class="jr-header" data-title="Program"> Program </th> <th scope="col" data-title="Days"> Days </th> <th scope="col" data-title="Times"> Times </th> <th scope="col" data-title="Ages"> Ages </th> <th scope="col" data-title="Openings"> Openings </th> <th scope="col" data-title="Instructors"> Instructors </th> <th scope="col" data-title="Class Starts"> Class Starts </th> <th scope="col" data-title="Class Ends"> Class Ends </th> <th scope="col" data-title="Price"> Price </th> </tr> </thead> <tbody> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19455756&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> D&amp;D Campaign (Group 1) </th> <td data-title="Days" data-type="" class=""> Tue </td> <td data-title="Times" data-type="" class=""> 5:15pm-6:45pm </td> <td data-title="Ages" data-type="" class=""> 8 - 11 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Sean </td> <td data-title="Class Starts" data-type="" class=""> 04/01/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/06/2025 </td> <td data-title="Price" data-type="currency" class=""> 198.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19455769&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> D&amp;D Campaign (Group 2) </th> <td data-title="Days" data-type="" class=""> Wed </td> <td data-title="Times" data-type="" class=""> 4:30pm-6:00pm </td> <td data-title="Ages" data-type="" class=""> 8 - 11 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Sean </td> <td data-title="Class Starts" data-type="" class=""> 04/02/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/07/2025 </td> <td data-title="Price" data-type="currency" class=""> 198.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19304948&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> Learn D&amp;D </th> <td data-title="Days" data-type="" class=""> Mon </td> <td data-title="Times" data-type="" class=""> 3:30pm-5:00pm </td> <td data-title="Ages" data-type="" class=""> 8 - 13 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Dan </td> <td data-title="Class Starts" data-type="" class=""> 04/07/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/05/2025 </td> <td data-title="Price" data-type="currency" class=""> 132.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19455750&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> D&amp;D Campaign </th> <td data-title="Days" data-type="" class=""> Tue </td> <td data-title="Times" data-type="" class=""> 5:15pm-6:45pm </td> <td data-title="Ages" data-type="" class=""> 10 - 14 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Gabrielle </td> <td data-title="Class Starts" data-type="" class=""> 04/01/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/06/2025 </td> <td data-title="Price" data-type="currency" class=""> 198.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19455763&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> D&amp;D Campaign (Group 1) </th> <td data-title="Days" data-type="" class=""> Wed </td> <td data-title="Times" data-type="" class=""> 4:30pm-6:00pm </td> <td data-title="Ages" data-type="" class=""> 10 - 14 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Mitch </td> <td data-title="Class Starts" data-type="" class=""> 04/02/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/07/2025 </td> <td data-title="Price" data-type="currency" class=""> 198.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19455779&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> D&amp;D Campaign (Group 2) </th> <td data-title="Days" data-type="" class=""> Wed </td> <td data-title="Times" data-type="" class=""> 6:15pm-7:45pm </td> <td data-title="Ages" data-type="" class=""> 10 - 14 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Mitch </td> <td data-title="Class Starts" data-type="" class=""> 04/02/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/07/2025 </td> <td data-title="Price" data-type="currency" class=""> 198.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19455740&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> D&amp;D Campaign (Teen) </th> <td data-title="Days" data-type="" class=""> Mon </td> <td data-title="Times" data-type="" class=""> 5:15pm-6:45pm </td> <td data-title="Ages" data-type="" class=""> 14 - 18 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Instructors" data-type="" class=""> Dan </td> <td data-title="Class Starts" data-type="" class=""> 03/31/2025 </td> <td data-title="Class Ends" data-type="" class=""> 06/09/2025 </td> <td data-title="Price" data-type="currency" class=""> 297.00 </td> </tr> </tbody> </table> </div> ' + '</div>');`
+
+    // Create a temporary div to parse the HTML
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(response, "text/html");
+
+    // Get all the rows from the table
+    const rows = doc.querySelectorAll("tbody tr");
+
+    // Get the container where the cards will be appended
+    const container = document.querySelector(".responsive-table");
+
+    // Loop through each row and extract the required data
+    rows.forEach((row) => {
+      const program = row.querySelector('th[data-title="Program"]').textContent;
+      const days = row.querySelector('td[data-title="Days"]').textContent;
+      const times = row.querySelector('td[data-title="Times"]').textContent;
+      const ages = row.querySelector('td[data-title="Ages"]').textContent;
+      const openings = row.querySelector(
+        'td[data-title="Openings"]'
+      ).textContent;
+      const classStarts = row.querySelector(
+        'td[data-title="Class Starts"]'
+      ).textContent;
+      const classEnds = row.querySelector(
+        'td[data-title="Class Ends"]'
+      ).textContent;
+      const price = row.querySelector('td[data-title="Price"]').textContent;
+        const registerLink = row.querySelector('a[target="_blank"]').href;
+
+      // Format the date (classStarts)
+      const startDate = new Date(classStarts); // Create a Date object from the string
+      const endDate = new Date(classEnds); // Create a Date object from the string
+      const formattedDate1 = new Intl.DateTimeFormat("en-US", {
+        month: "long",
+        day: "numeric",
+      }).format(startDate); // Format to "March 1"
+
+      const formattedDate2 = new Intl.DateTimeFormat("en-US", {
+        month: "long",
+        day: "numeric",
+      }).format(endDate); // Format to "March 1"
+
+      // Create the card HTML
+      const tablerow = document.createElement("tr");
+      tablerow.classList.add("row");
+      tablerow.innerHTML = `
+    <td data-title="Register" data-type="">
+      <a href="${registerLink}">
+        <button class="register-btn">Register Now</button>
+      </a>
+    </td>
+    <th data-title="Program" scope="row" class="" data-type="">${program}</th>
+    <td data-title="Days" data-type="">${days}</td>
+    <td data-title="Times" data-type="">${times}</td>
+    <td data-title="Ages" data-type="">Ages: ${ages}</td>
+    <td data-title="Class Starts" data-type="">${formattedDate1} - ${formattedDate2}</td>
+    <td data-title="Price" data-type="currency" class="">${price}</td>
+  `;
+
+      //   Append the card to the container
+      container.appendChild(tablerow);
+    });
+  </script>
+
+  <!-- <script
+    type="text/javascript"
+    src="https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsJS?OrgID=554798&Cat1=After%School%DnD&&hidecols=Session,Description&sort=StartDate,Ages&&tuitionlabel=Price&classlabel=Program"
+  ></script> -->
+
+  <!-- <script
+  type="text/javascript"
+  src="https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsJS?OrgID=554798&Cat1=After%School%DnD&Cat2=xpDnd&&hidecols=Session,Description&sort=StartDate,Ages&&tuitionlabel=Price&classlabel=Program"
+></script> -->
+</div>
