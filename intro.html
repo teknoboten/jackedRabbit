@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<style>
+  .container {
+    max-width: 1000px;
+    margin: 0rem auto;
+    padding: 0.25rem;
+    background: white;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-family: "Tiller Bold", "Cambria", "Cochin", Georgia, Times,
+      "Times New Roman", serif;
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+
+  .card {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* max-width: 400px; */
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: "Roboto";
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .register-btn {
+    background-color: #025959;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+</style>
+
+<div class="container"></div>
+
+<script>
+  // Assuming the HTML response is already available as a string
+  const response = `document.write('<div>' + '<style> div.jr-container { box-sizing:border-box } div.jr-container:before,div.jr-container:after { box-sizing: border-box } .responsive-table { font-family: inherit; color: black; } /* container styles */ .jr-container { margin: 5% 3%; } .responsive-table { font-size: .9em; border-spacing: 0; border-collapse: collapse; } .responsive-table { width: 100%; margin-bottom: 1.5em; } .responsive-table thead { /*// Accessibly hide <thead> on narrow viewports*/ position: absolute; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden; } .responsive-table thead th { /*background-color: rgba(29,150,178,1); border: 1px solid rgba(29,150,178,1);*/ /*font-weight: normal;*/ text-align: center; } .responsive-table thead :first-child { text-align: left; } /*// Set these items to display: block for narrow viewports*/ .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td { display: block; padding: 0; text-align: left; white-space: normal; } .responsive-table thead tr th, .responsive-table tbody tr td, .responsive-table tbody tr th { padding: .3em .5em; vertical-align: middle; } .responsive-table tbody tr { margin-bottom: 1em; border: 2px solid rgba(94,93,82,1) } .responsive-table tbody tr:last-of-type { margin-bottom: 0; } .responsive-table tbody th[scope="row"],.responsive-table thead th[scope="col"].jr-header { text-align: left; } .responsive-table tbody td { text-align: right; } .responsive-table tbody td[data-type=currency] { text-align: right; } .responsive-table tbody td[data-title]:before { content: attr(data-title); float: left; font-size: .8em; color: rgba(94, 93, 82, .75); } .responsive-table tbody td[data-title="Openings"], .responsive-table tbody td[data-title="Price"] { white-space: nowrap; } /* override register link styles */ .responsive-table tbody td.jr-reg-col { } .responsive-table tbody td.jr-reg-col:before { content: \'\'; } .responsive-table tbody td[data-title]:before { font-size: .9em; } /* add header style for mobile as well */ @media (max-width: 474px) { .responsive-table tbody th { } } /* large table styles */ @media (min-width: 475px) { .jr-container { margin: 2em auto; } .responsive-table tbody tr:nth-of-type(even) { background-color: rgba(94, 93, 82, 0.1); } .responsive-table tbody tr td[data-title="Description"], .responsive-table thead tr th[data-title="Description"] { text-align: left; } .responsive-table { font-size: 9pt; } .responsive-table thead { /*// Unhide <thead> on wide viewports*/ position: relative; clip: auto; height: auto; width: auto; overflow: auto; } .responsive-table tbody :first-child { text-align: left; } .responsive-table tr { /*// Undo display: block*/ display: table-row; } .responsive-table th, .responsive-table td { /*// Undo display: block*/ display: table-cell; } .responsive-table tbody { /*// Undo display: block*/ display: table-row-group; } .responsive-table tbody tr { border: none; } .responsive-table tbody tr { /*// Undo display: block*/ display: table-row; border-width: 1px; } .responsive-table tbody th[scope="row"] { background-color: transparent; color: rgba(94,93,82,1); font-weight: normal; } .responsive-table tbody td { text-align: center; } .responsive-table tbody td[data-title="Program"], .responsive-table thead th[data-title="Program"] { text-align: left; } .responsive-table tbody td[data-title]:before { /*// Don’t show data-title labels*/ content: none; } } /* large table styles passed in from user! */ .responsive-table tbody td[data-title="Program"], .responsive-table tbody th[data-title="Program"] { } .responsive-table { } .responsive-table thead tr th { } </style>' + ' <div class="jr-container"> <table class="responsive-table"> <thead> <tr> <th scope="col" data-title="Register"> Register </th> <th scope="col" class="jr-header" data-title="Program"> Program </th> <th scope="col" data-title="Description"> Description </th> <th scope="col" data-title="Days"> Days </th> <th scope="col" data-title="Times"> Times </th> <th scope="col" data-title="Ages"> Ages </th> <th scope="col" data-title="Openings"> Openings </th> <th scope="col" data-title="Class Starts"> Class Starts </th> <th scope="col" data-title="Class Ends"> Class Ends </th> <th scope="col" data-title="Price"> Price </th> </tr> </thead> <tbody> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> <a target="_blank" href="https://app.jackrabbitclass.com/reg.asp?id=554798&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=19175065&amp;loc=">Register</a> </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> Learn D&amp;D with Gabrielle 2 </th> <td data-title="Description" data-type="" class=""> A welcoming space for kids to learn about and explore the world of Dungeons and Dragons (D&amp;D)! This program will teach kids the rules of the game, and they will also embark upon an exciting adventure. D&amp;D is a role-playing game where players use their imaginations to take on the role of adventurers in a fantasy world - they embark on quests, solve problems, and defeat villains. One person, called the Game Master, guides the story and sets the challenges (that’s us!) (TIP FOR PARENTS: D&amp;D has kids learning &amp; practicing a ton of life skills without them even being aware of it!) </td> <td data-title="Days" data-type="" class=""> Tue </td> <td data-title="Times" data-type="" class=""> 3:30pm-5:00pm </td> <td data-title="Ages" data-type="" class=""> 8 - 13 </td> <td data-title="Openings" data-type="" class=""> 2 </td> <td data-title="Class Starts" data-type="" class=""> 02/18/2025 </td> <td data-title="Class Ends" data-type="" class=""> 03/11/2025 </td> <td data-title="Price" data-type="currency" class=""> 132.00 </td> </tr> <tr> <td data-title="Register" data-type="" class="jr-reg-col"> &nbsp; </td> <th data-title="Program" scope="row" data-type="" class="jr-header"> Learn D&amp;D with Dan </th> <td data-title="Description" data-type="" class=""> A welcoming space for kids to learn about and explore the world of Dungeons and Dragons (D&amp;D)! This program will teach kids the rules of the game, and they will also embark upon an exciting adventure. D&amp;D is a role-playing game where players use their imaginations to take on the role of adventurers in a fantasy world - they embark on quests, solve problems, and defeat villains. One person, called the Game Master, guides the story and sets the challenges (that’s us!) (TIP FOR PARENTS: D&amp;D has kids learning &amp; practicing a ton of life skills without them even being aware of it!) </td> <td data-title="Days" data-type="" class=""> Mon </td> <td data-title="Times" data-type="" class=""> 3:30pm-5:00pm </td> <td data-title="Ages" data-type="" class=""> 8 - 13 </td> <td data-title="Openings" data-type="" class=""> 6 </td> <td data-title="Class Starts" data-type="" class=""> 04/07/2025 </td> <td data-title="Class Ends" data-type="" class=""> 05/05/2025 </td> <td data-title="Price" data-type="currency" class=""> 132.00 </td> </tr> </tbody> </table> </div> ' + '</div>');`;
+
+  // Create a temporary div to parse the HTML
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(response, "text/html");
+
+  // Get all the rows from the table
+  const rows = doc.querySelectorAll("tbody tr");
+
+  // Get the container where the cards will be appended
+  const container = document.querySelector(".container");
+
+  // Loop through each row and extract the required data
+  rows.forEach((row) => {
+    const program = row.querySelector('th[data-title="Program"]').textContent;
+    const description = row.querySelector(
+      'td[data-title="Description"]'
+    ).textContent;
+    const days = row.querySelector('td[data-title="Days"]').textContent;
+    const times = row.querySelector('td[data-title="Times"]').textContent;
+    const ages = row.querySelector('td[data-title="Ages"]').textContent;
+    const openings = row.querySelector('td[data-title="Openings"]').textContent;
+    const classStarts = row.querySelector(
+      'td[data-title="Class Starts"]'
+    ).textContent;
+    const classEnds = row.querySelector(
+      'td[data-title="Class Ends"]'
+    ).textContent;
+    const price = row.querySelector('td[data-title="Price"]').textContent;
+    const registerLink = row.querySelector('a[target="_blank"]').href;
+
+    // Format the date (classStarts)
+    const startDate = new Date(classStarts); // Create a Date object from the string
+    const endDate = new Date(classEnds); // Create a Date object from the string
+    const formattedDate1 = new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "numeric",
+    }).format(startDate); // Format to "March 1"
+
+    const formattedDate2 = new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "numeric",
+    }).format(endDate); // Format to "March 1"
+
+    // Create the card HTML
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.innerHTML = `
+          <h1 class="class-name">${program}</h1>
+          <h3><span class="date"> ${formattedDate1} - ${formattedDate2}</span></h3>
+          <h3><span class="time">${times}</span></h3>
+          <h3>Ages: <span class="age">${ages}</span></h3>
+          <h3>Price: <span class="price">${price}</span></h3>
+          <p class="description">${description}</p>
+          <a href="${registerLink}">
+            <button class="register-btn">Register Now</button>
+          </a>
+        `;
+
+    // Append the card to the container
+    container.appendChild(card);
+  });
+</script>
+
+<!-- rows.forEach((row) => {
+  const program = row.querySelector('th[data-title="Program"]').textContent;
+  const description = row.querySelector(
+    'td[data-title="Description"]'
+  ).textContent;
+  const days = row.querySelector('td[data-title="Days"]').textContent;
+  const times = row.querySelector('td[data-title="Times"]').textContent;
+  const ages = row.querySelector('td[data-title="Ages"]').textContent;
+  const openings = row.querySelector('td[data-title="Openings"]').textContent;
+  const classStarts = row.querySelector(
+    'td[data-title="Class Starts"]'
+  ).textContent;
+  const price = row.querySelector('td[data-title="Price"]').textContent;
+  const registerLink = row.querySelector('a[target="_blank"]').href;
+
+  // Create the card HTML
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.innerHTML = `
+        <h1 class="class-name">${program}</h1>
+        <h3>Date: <span class="date">${classStarts}</span></h3>
+        <h3>Time: <span class="time">${times}</span></h3>
+        <h3>Ages: <span class="age">${ages}</span></h3>
+        <h3>Price: <span class="price">${price}</span></h3>
+        <p class="description">${description}</p>
+        <a href="${registerLink}">
+          <button class="register-btn">Register Now</button>
+        </a>
+      `;
+
+  // Append the card to the container
+  container.appendChild(card);
+}); -->
